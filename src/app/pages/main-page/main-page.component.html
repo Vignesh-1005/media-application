@@ -1,0 +1,85 @@
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <h3 class="text-color">
+                    {{ 'mediaHeading' | translate }}
+                  </h3>
+                </li>
+              </ul>
+              <form class="form-inline mt-2 mt-md-0">
+              <div class="dropdown-fit">  
+              <p-dropdown [options]="countries" [(ngModel)]="selectedLanguage" optionLabel="name"
+              name="initialLang" (onChange)="setLanguage()"></p-dropdown>
+              </div>
+      
+                <button type="button" class="setBtn" (click)="showHomePage()">
+                  {{ 'homeLabel' | translate }}
+                </button>
+                <button *ngIf="logStatus == 'Logout'"  type="button" class="setBtn" (click)="showGalleryPage()">
+                  {{ 'galleryLabel' | translate }}
+                </button>
+                <button type="button" class="setBtn" (click)="showAboutUs()">
+                  {{ 'aboutLabel' | translate }}
+                </button>
+                <h6 *ngIf="logStatus == 'Logout'" class="text-color user-id">{{userKey}}</h6>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="showSigninDialog()">
+                    {{logStatus}}
+                </button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+<main role="main">
+  <div>
+    <app-home-page *ngIf="showHome"></app-home-page>
+  </div>
+
+  <div>
+    <app-gallery-page *ngIf="showGallery"></app-gallery-page>
+  </div>
+
+  <div>
+    <app-about-page *ngIf="showAbout"></app-about-page>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p-button class="float-right" icon="pi-arrow-up" (click)="scrollTop()" label="Back to top" styleClass="p-button-sm"></p-button>
+    <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+</body>
+
+<p-dialog header="A2Z Sign in" [(visible)]="displaySignin" [modal]="true" [style]="{width: '33vw'}" [baseZIndex]="10000"
+    [draggable]="false" [resizable]="false">
+    <br>
+    <span class="p-float-label">
+        <input id="float-input" type="text" pInputText [(ngModel)]="userName"> 
+        <label for="float-input">
+          {{ 'userName' | translate }}
+        </label>
+    </span>
+    <br>
+    <br>
+    <span class="p-float-label">
+        <input id="float-input" type="password" pInputText [(ngModel)]="userPassword"> 
+        <label for="float-input">
+          {{ 'password' | translate }}
+        </label>
+    </span>
+    <br>
+    <p *ngIf="alertFlag" class="warn-text">
+      {{ 'errorMsg' | translate }}
+    </p>
+    <ng-template pTemplate="footer">
+        <p-button icon="pi pi-check" styleClass="p-button-sm" (click)="validateCredential()" label="Sign in" class="p-button-text"></p-button>
+        <p-button icon="pi pi-times" (click)="closeSigninDialog()" label="Cancel" styleClass="p-button-sm"></p-button>
+    </ng-template>
+</p-dialog>
+
+<p-confirmDialog [style]="{width: '33vw'}" [baseZIndex]="10000"></p-confirmDialog>

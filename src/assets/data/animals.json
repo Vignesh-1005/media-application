@@ -1,0 +1,124 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Amur Leopard",
+			"description": "Product Description",
+			"image": "Jaguar.jpg",
+			"price": "Panthera pardus orientalis",
+			"category": "Critically Endangered",
+			"quantity": 24,
+			"inventoryStatus": "INSTOCK",
+			"rating": 2
+		},
+		{
+			"id": "1001",
+			"code": "nvklal433",
+			"name": "Black Rhino",
+			"description": "Product Description",
+			"image": "Black_Rhino.jpg",
+			"price": "Diceros bicornis",
+			"category": "Critically Endangered",
+			"quantity": 61,
+			"inventoryStatus": "INSTOCK",
+			"rating": 1
+		},
+		{
+			"id": "1002",
+			"code": "zz21cz3c1",
+			"name": "Bornean Orangutan",
+			"description": "Product Description",
+			"image": "orangutan.jpg",
+			"price": "Pongo pygmaeus",
+			"category": "Critically Endangered",
+			"quantity": 2,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 1
+		},
+		{
+			"id": "1003",
+			"code": "244wgerg2",
+			"name": "Cross River Gorilla",
+			"description": "Product Description",
+			"image": "gorilla.jpg",
+			"price": "Gorilla gorilla diehli",
+			"category": "Critically Endangered",
+			"quantity": 25,
+			"inventoryStatus": "INSTOCK",
+			"rating": 1
+		},
+		{
+			"id": "1004",
+			"code": "h456wer53",
+			"name": "African Wild Dog",
+			"description": "Product Description",
+			"image": "Swift_Fox.jpg",
+			"price": "Lycaon pictus",
+			"category": "Endangered",
+			"quantity": 73,
+			"inventoryStatus": "INSTOCK",
+			"rating": 2
+		},
+		{
+			"id": "1005",
+			"code": "av2231fwg",
+			"name": "Black-footed Ferret",
+			"description": "Product Description",
+			"image": "ferret.jpg",
+			"price": "Mustela nigripes",
+			"category": "Endangered",
+			"quantity": 0,
+			"inventoryStatus": "OUTOFSTOCK",
+			"rating": 2
+		},
+		{
+			"id": "1006",
+			"code": "bib36pfvm",
+			"name": "Red Panda",
+			"description": "Product Description",
+			"image": "red_panda.jpg",
+			"price": "Ailurus fulgens",
+			"category": "Endangered",
+			"quantity": 5,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 3
+		},
+		{
+			"id": "1007",
+			"code": "mbvjkgip5",
+			"name": "Sea Lions",
+			"description": "Product Description",
+			"image": "sea_lion.jpg",
+			"price": "Zalophus wollebaeki",
+			"category": "Endangered",
+			"quantity": 23,
+			"inventoryStatus": "INSTOCK",
+			"rating": 3
+		},
+		{
+			"id": "1008",
+			"code": "vbb124btr",
+			"name": "Tiger",
+			"description": "Product Description",
+			"image": "tiger2.jpg",
+			"price": "Panthera tigris",
+			"category": "Endangered",
+			"quantity": 2,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 2
+		},
+		{
+			"id": "1009",
+			"code": "cm230f032",
+			"name": "Black Spider Monkey",
+			"description": "Product Description",
+			"image": "black_spider_monkey.jpg",
+			"price": "Ateles paniscus",
+			"category": "Vulnerable",
+			"quantity": 63,
+			"inventoryStatus": "INSTOCK",
+			"rating": 3
+		}
+    ]
+}
